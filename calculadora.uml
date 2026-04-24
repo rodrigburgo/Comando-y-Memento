@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_d62zUD9yEfGUtvXX36v8TQ" name="calculadora">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_d_YG8D9yEfGUtvXX36v8TQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_mv79oD9yEfGUtvXX36v8TQ" name="Invocador Calculadora">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_VehOQD90EfGUtvXX36v8TQ" name="calculadora" visibility="private" type="_6rdh0D97EfGUtvXX36v8TQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0cwyoD91EfGUtvXX36v8TQ" name="historial" visibility="private" type="_tiaZMD-BEfGUtvXX36v8TQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qgLP4j-EEfGUtvXX36v8TQ" name="calculadora" type="_6rdh0D97EfGUtvXX36v8TQ" association="_qgKBwD-EEfGUtvXX36v8TQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qgL28D-EEfGUtvXX36v8TQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qgL28T-EEfGUtvXX36v8TQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_5Qr20T-EEfGUtvXX36v8TQ" name="historial" type="_tiaZMD-BEfGUtvXX36v8TQ" association="_5QqosD-EEfGUtvXX36v8TQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5Qr20j-EEfGUtvXX36v8TQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5Qr20z-EEfGUtvXX36v8TQ" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_HTnj4D92EfGUtvXX36v8TQ" name="ejecutarComando">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_3jHCED-BEfGUtvXX36v8TQ" name="c" type="_KxC3kD93EfGUtvXX36v8TQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_5D--8D-BEfGUtvXX36v8TQ" name="deshacer"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_-0Ul4D-BEfGUtvXX36v8TQ" name="rehacer"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_KxC3kD93EfGUtvXX36v8TQ" name="Comando">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_RC-vsD93EfGUtvXX36v8TQ" name="ejecutar"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_TvG-wD93EfGUtvXX36v8TQ" name="deshacer"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_QipF8D97EfGUtvXX36v8TQ" name="ComandoSumar">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ZVfboD97EfGUtvXX36v8TQ" name="operando" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_zmKTED97EfGUtvXX36v8TQ" name="calculadora" visibility="private" type="_6rdh0D97EfGUtvXX36v8TQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_XjpfAj-FEfGUtvXX36v8TQ" name="calculadora" type="_6rdh0D97EfGUtvXX36v8TQ" association="_Xjo38D-FEfGUtvXX36v8TQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XjpfAz-FEfGUtvXX36v8TQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XjpfBD-FEfGUtvXX36v8TQ" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Ms38AD-AEfGUtvXX36v8TQ" name="ejecutar"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_N-bDcD-AEfGUtvXX36v8TQ" name="deshacer"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_6rdh0D97EfGUtvXX36v8TQ" name="Calculadora">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_9ycg4D97EfGUtvXX36v8TQ" name="valoraActual">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Lq4hQj-FEfGUtvXX36v8TQ" name="mementocalculadora" type="_pvmywD99EfGUtvXX36v8TQ" association="_Lq3TID-FEfGUtvXX36v8TQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Lq4hQz-FEfGUtvXX36v8TQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Lq4hRD-FEfGUtvXX36v8TQ" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_EBh5UD98EfGUtvXX36v8TQ" name="getValor" concurrency="guarded">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_maV8kD98EfGUtvXX36v8TQ" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_xYaMoD98EfGUtvXX36v8TQ" name="setValor">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_4dkRcD98EfGUtvXX36v8TQ" name="v">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_PzsDUD99EfGUtvXX36v8TQ" name="sumar">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_TyW4UD99EfGUtvXX36v8TQ" name="v">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_VoukED99EfGUtvXX36v8TQ" name="restar">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_VoukET99EfGUtvXX36v8TQ" name="v">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ZOCd4D99EfGUtvXX36v8TQ" name="multiplicar">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZOCd4T99EfGUtvXX36v8TQ" name="v">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_bZVQwD99EfGUtvXX36v8TQ" name="dividir">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_bZVQwT99EfGUtvXX36v8TQ" name="v">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_d7jV4D99EfGUtvXX36v8TQ" name="borrar"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_kIL3QD99EfGUtvXX36v8TQ" name="guardarEstado">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_imwO0D9_EfGUtvXX36v8TQ" type="_pvmywD99EfGUtvXX36v8TQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_kPP2oD9_EfGUtvXX36v8TQ" name="restaurarEstado">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nmhUcD9_EfGUtvXX36v8TQ" name="m" type="_pvmywD99EfGUtvXX36v8TQ"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_pvmywD99EfGUtvXX36v8TQ" name="MementoCalculadora">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ruycQD99EfGUtvXX36v8TQ" name="valorGuardado" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_0JeJkD99EfGUtvXX36v8TQ" name="getValorGuardado">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_6bKKED99EfGUtvXX36v8TQ" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_gVXlkD-AEfGUtvXX36v8TQ" name="ComandoRestar">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_gVXlkT-AEfGUtvXX36v8TQ" name="operando" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_gVXlkj-AEfGUtvXX36v8TQ" name="calculadora" visibility="private" type="_6rdh0D97EfGUtvXX36v8TQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_uy3w8D-AEfGUtvXX36v8TQ" name="calculadora" visibility="private" type="_6rdh0D97EfGUtvXX36v8TQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_uy5mID-AEfGUtvXX36v8TQ" name="operando" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_bk_Ngj-FEfGUtvXX36v8TQ" name="calculadora" type="_6rdh0D97EfGUtvXX36v8TQ" association="_bk-mcD-FEfGUtvXX36v8TQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bk_0kD-FEfGUtvXX36v8TQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bk_0kT-FEfGUtvXX36v8TQ" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_gVXlkz-AEfGUtvXX36v8TQ" name="ejecutar"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_gVXllD-AEfGUtvXX36v8TQ" name="deshacer"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_JTCc8D-BEfGUtvXX36v8TQ" name="deshacer"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_JTDrED-BEfGUtvXX36v8TQ" name="ejecutar"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_mY7qgD-AEfGUtvXX36v8TQ" name="ComandoDividir">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_mY7qgT-AEfGUtvXX36v8TQ" name="operando" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_mY7qgj-AEfGUtvXX36v8TQ" name="calculadora" visibility="private" type="_6rdh0D97EfGUtvXX36v8TQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_N3k_ID-BEfGUtvXX36v8TQ" name="calculadora" visibility="private" type="_6rdh0D97EfGUtvXX36v8TQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_N3mNQD-BEfGUtvXX36v8TQ" name="operando" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ea5qsj-FEfGUtvXX36v8TQ" name="calculadora" type="_6rdh0D97EfGUtvXX36v8TQ" association="_ea5DoD-FEfGUtvXX36v8TQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ea6RwD-FEfGUtvXX36v8TQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ea6RwT-FEfGUtvXX36v8TQ" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_mY7qgz-AEfGUtvXX36v8TQ" name="ejecutar"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_mY7qhD-AEfGUtvXX36v8TQ" name="deshacer"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Q7ZVcD-BEfGUtvXX36v8TQ" name="deshacer"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Q7ajkD-BEfGUtvXX36v8TQ" name="ejecutar"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ppXggD-AEfGUtvXX36v8TQ" name="ComandoMultiplicar">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ppXggT-AEfGUtvXX36v8TQ" name="operando" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ppXggj-AEfGUtvXX36v8TQ" name="calculadora" visibility="private" type="_6rdh0D97EfGUtvXX36v8TQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_OBnE4D-BEfGUtvXX36v8TQ" name="calculadora" visibility="private" type="_6rdh0D97EfGUtvXX36v8TQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_OBo6ED-BEfGUtvXX36v8TQ" name="operando" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_fCw78j-FEfGUtvXX36v8TQ" name="calculadora" type="_6rdh0D97EfGUtvXX36v8TQ" association="_fCwU4D-FEfGUtvXX36v8TQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fCw78z-FEfGUtvXX36v8TQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fCxjAD-FEfGUtvXX36v8TQ" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ppXggz-AEfGUtvXX36v8TQ" name="ejecutar"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ppXghD-AEfGUtvXX36v8TQ" name="deshacer"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_RHEZ8D-BEfGUtvXX36v8TQ" name="ejecutar"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_RHGPID-BEfGUtvXX36v8TQ" name="deshacer"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_r9I58D-AEfGUtvXX36v8TQ" name="ComandoBorrar">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_r9I58T-AEfGUtvXX36v8TQ" name="operando" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_r9I58j-AEfGUtvXX36v8TQ" name="calculadora" visibility="private" type="_6rdh0D97EfGUtvXX36v8TQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_OSjq8D-BEfGUtvXX36v8TQ" name="calculadora" visibility="private" type="_6rdh0D97EfGUtvXX36v8TQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_OSlgID-BEfGUtvXX36v8TQ" name="operando" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ggjvoj-FEfGUtvXX36v8TQ" name="calculadora" type="_6rdh0D97EfGUtvXX36v8TQ" association="_ggjIkD-FEfGUtvXX36v8TQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ggkWsD-FEfGUtvXX36v8TQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ggkWsT-FEfGUtvXX36v8TQ" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_r9I58z-AEfGUtvXX36v8TQ" name="ejecutar"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_r9I59D-AEfGUtvXX36v8TQ" name="deshacer"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_RUfx8D-BEfGUtvXX36v8TQ" name="ejecutar"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_RUhnID-BEfGUtvXX36v8TQ" name="deshacer"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_tiaZMD-BEfGUtvXX36v8TQ" name="Historial">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_JONx4D-CEfGUtvXX36v8TQ" name="pilaDeshacer Deque" visibility="private" type="_pvmywD99EfGUtvXX36v8TQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_OnN24D-CEfGUtvXX36v8TQ" name="pilaRehacer Deque" visibility="private" type="_pvmywD99EfGUtvXX36v8TQ"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_y8K2sD-CEfGUtvXX36v8TQ" name="guardar">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_5NSPcD-CEfGUtvXX36v8TQ" name="m" type="_pvmywD99EfGUtvXX36v8TQ"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_zJ4ikD-CEfGUtvXX36v8TQ" name="deshacer">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_8CPDUD-CEfGUtvXX36v8TQ" type="_pvmywD99EfGUtvXX36v8TQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_zXKJkD-CEfGUtvXX36v8TQ" name="rehacer">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_-x35YD-CEfGUtvXX36v8TQ" type="_pvmywD99EfGUtvXX36v8TQ" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_zlReED-CEfGUtvXX36v8TQ" name="puedeDeshacer">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_K8YHYD-DEfGUtvXX36v8TQ" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_LfFL0D-DEfGUtvXX36v8TQ" name="puedeRehacer">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_REMaMD-DEfGUtvXX36v8TQ" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_bvZ_sD-DEfGUtvXX36v8TQ" name="implementa" client="_gVXlkD-AEfGUtvXX36v8TQ" supplier="_KxC3kD93EfGUtvXX36v8TQ"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_jycpED-DEfGUtvXX36v8TQ" name="implementa" client="_QipF8D97EfGUtvXX36v8TQ" supplier="_KxC3kD93EfGUtvXX36v8TQ"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_mBiW0D-DEfGUtvXX36v8TQ" name="implementa" client="_ppXggD-AEfGUtvXX36v8TQ" supplier="_KxC3kD93EfGUtvXX36v8TQ"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_qrBDYD-DEfGUtvXX36v8TQ" name="implementa" client="_r9I58D-AEfGUtvXX36v8TQ" supplier="_KxC3kD93EfGUtvXX36v8TQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_vMH3ED-DEfGUtvXX36v8TQ" name="invoca" visibility="public" memberEnd="_vMPL0D-DEfGUtvXX36v8TQ _vMPy4j-DEfGUtvXX36v8TQ" navigableOwnedEnd="_vMPL0D-DEfGUtvXX36v8TQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vMN9sD-DEfGUtvXX36v8TQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vMN9sT-DEfGUtvXX36v8TQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_vMPL0D-DEfGUtvXX36v8TQ" name="comando" type="_KxC3kD93EfGUtvXX36v8TQ" association="_vMH3ED-DEfGUtvXX36v8TQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vMPy4D-DEfGUtvXX36v8TQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vMPy4T-DEfGUtvXX36v8TQ" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_vMPy4j-DEfGUtvXX36v8TQ" name="invocador calculadora" type="_mv79oD9yEfGUtvXX36v8TQ" association="_vMH3ED-DEfGUtvXX36v8TQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qgKBwD-EEfGUtvXX36v8TQ" name="usa" memberEnd="_qgLP4j-EEfGUtvXX36v8TQ _qgL28j-EEfGUtvXX36v8TQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qgLP4D-EEfGUtvXX36v8TQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qgLP4T-EEfGUtvXX36v8TQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_qgL28j-EEfGUtvXX36v8TQ" name="invocador calculadora" type="_mv79oD9yEfGUtvXX36v8TQ" association="_qgKBwD-EEfGUtvXX36v8TQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_5QqosD-EEfGUtvXX36v8TQ" name="usa" memberEnd="_5Qr20T-EEfGUtvXX36v8TQ _5Qr21D-EEfGUtvXX36v8TQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5QrPwD-EEfGUtvXX36v8TQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5Qr20D-EEfGUtvXX36v8TQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_5Qr21D-EEfGUtvXX36v8TQ" name="invocador calculadora" type="_mv79oD9yEfGUtvXX36v8TQ" association="_5QqosD-EEfGUtvXX36v8TQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ENAacD-FEfGUtvXX36v8TQ" name="almacena" memberEnd="_ENBBgT-FEfGUtvXX36v8TQ _ENBBhD-FEfGUtvXX36v8TQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ENAacT-FEfGUtvXX36v8TQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ENBBgD-FEfGUtvXX36v8TQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ENBBhD-FEfGUtvXX36v8TQ" name="historial" type="_tiaZMD-BEfGUtvXX36v8TQ" association="_ENAacD-FEfGUtvXX36v8TQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ENBBgT-FEfGUtvXX36v8TQ" name="mementocalculadora" type="_pvmywD99EfGUtvXX36v8TQ" aggregation="shared" association="_ENAacD-FEfGUtvXX36v8TQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ENBBgj-FEfGUtvXX36v8TQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ENBBgz-FEfGUtvXX36v8TQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Lq3TID-FEfGUtvXX36v8TQ" name="crea" memberEnd="_Lq4hQj-FEfGUtvXX36v8TQ _Lq4hRT-FEfGUtvXX36v8TQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Lq4hQD-FEfGUtvXX36v8TQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Lq4hQT-FEfGUtvXX36v8TQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Lq4hRT-FEfGUtvXX36v8TQ" name="calculadora" type="_6rdh0D97EfGUtvXX36v8TQ" association="_Lq3TID-FEfGUtvXX36v8TQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Xjo38D-FEfGUtvXX36v8TQ" name="modifica" memberEnd="_XjpfAj-FEfGUtvXX36v8TQ _XjpfBT-FEfGUtvXX36v8TQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XjpfAD-FEfGUtvXX36v8TQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XjpfAT-FEfGUtvXX36v8TQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_XjpfBT-FEfGUtvXX36v8TQ" name="comandosumar" type="_QipF8D97EfGUtvXX36v8TQ" association="_Xjo38D-FEfGUtvXX36v8TQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_bk-mcD-FEfGUtvXX36v8TQ" name="modifica" memberEnd="_bk_Ngj-FEfGUtvXX36v8TQ _bk_0kj-FEfGUtvXX36v8TQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bk_NgD-FEfGUtvXX36v8TQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bk_NgT-FEfGUtvXX36v8TQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_bk_0kj-FEfGUtvXX36v8TQ" name="comandorestar" type="_gVXlkD-AEfGUtvXX36v8TQ" association="_bk-mcD-FEfGUtvXX36v8TQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ea5DoD-FEfGUtvXX36v8TQ" name="modifica" memberEnd="_ea5qsj-FEfGUtvXX36v8TQ _ea6Rwj-FEfGUtvXX36v8TQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ea5qsD-FEfGUtvXX36v8TQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ea5qsT-FEfGUtvXX36v8TQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ea6Rwj-FEfGUtvXX36v8TQ" name="comandodividir" type="_mY7qgD-AEfGUtvXX36v8TQ" association="_ea5DoD-FEfGUtvXX36v8TQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_fCwU4D-FEfGUtvXX36v8TQ" name="modifica" memberEnd="_fCw78j-FEfGUtvXX36v8TQ _fCxjAT-FEfGUtvXX36v8TQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fCw78D-FEfGUtvXX36v8TQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fCw78T-FEfGUtvXX36v8TQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fCxjAT-FEfGUtvXX36v8TQ" name="comandomultiplicar" type="_ppXggD-AEfGUtvXX36v8TQ" association="_fCwU4D-FEfGUtvXX36v8TQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ggjIkD-FEfGUtvXX36v8TQ" name="modifica" memberEnd="_ggjvoj-FEfGUtvXX36v8TQ _ggkWsj-FEfGUtvXX36v8TQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ggjvoD-FEfGUtvXX36v8TQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ggjvoT-FEfGUtvXX36v8TQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ggkWsj-FEfGUtvXX36v8TQ" name="comandoborrar" type="_r9I58D-AEfGUtvXX36v8TQ" association="_ggjIkD-FEfGUtvXX36v8TQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_6jjXcD-FEfGUtvXX36v8TQ" name="implementa" client="_mY7qgD-AEfGUtvXX36v8TQ" supplier="_KxC3kD93EfGUtvXX36v8TQ"/>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ZBZfID90EfGUtvXX36v8TQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZBdwkD90EfGUtvXX36v8TQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>
